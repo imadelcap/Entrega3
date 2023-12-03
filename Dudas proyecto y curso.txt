@@ -1,0 +1,31 @@
+No me andaba django-admin start project. Modifique las variables de entorno.
+Luego no me anda       'DIRS': [BASE_DIR/	Plantillas"] 
+
+no regonoce 
+{% static ' '%} 
+
+
+
+Recordar colocar en settings.py la variable 
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+    '/var/www/static/',
+]
+
+
+Para iniciar un modelo > python manage.py startapp NOMBRE
+Para chequearlo> python manage.py check NOMBRE
+Para tranformar los modelos en base de datos> python manage.py makemigrations	
+Para pasarlo a SQL> python manage.py sqlmigrate AppTiendaBicicletas 0001
+
+
+XQ hacen esto? Es necesario?
+  print(formulario)
+
+Probar los if de formularios con datos no valios 
+
+
+C:\Users\Imanol Calvo\Desktop\Curso Python\Entrega3>git add .
+warning: in the working copy of 'static/css/styles.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'static/js/scripts.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'templates/base.html', LF will be replaced by CRLF the next time Git touches it

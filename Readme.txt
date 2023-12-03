@@ -8,4 +8,5 @@ La página de inicio de Entrega3 es el template padre: base.html (http://localho
 
 Los forumularios los implementé de forma diferente. Para Accesorio y Cliente lo hice con un objeto Form. Para Modelo bicicleta lo hice de la forma larga.
 Esto fue así ya que con el objeto Form no me funcionaba y fui solucionando otros errores con la página de forumulario de Modelo bicicleta. 
-Finalmente encontré en foros que el problema era pasarle a la página la clase formulario y no la instancia (
+Finalmente encontré en foros que el problema era pasarle a la página la clase formulario y no la instancia (en el procesmiento del formulario en la vista). 
+Nada intuitivo y fue una piedra. Dejé ambas implementaciones pero puedo unificar de ser necesario.

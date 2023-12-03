@@ -26,7 +26,7 @@ def formulario_modelo_bicicleta1(request): # con este metodo no me generaba el o
     
     
     formulario = ModeloBicicletaFormulario(request.POST)
-    return render(request, 'formulario_modelo_bicicleta.html')
+    return render(request, 'formulario_modelo_bicicleta.html', { 'formulario': formulario })
 
 def formulario_cliente(request):
     if request.method == 'POST':
@@ -40,7 +40,7 @@ def formulario_cliente(request):
             return render(request, 'inicio.html')    
     
     formulario = ClienteFormulario(request.POST)
-    return render(request, 'formulario_cliente.html',  { 'formulario': formulario })
+    return render(request, 'formulario_cliente.html',  {'formulario': formulario })
 
 def formulario_accesorio(request):
     if request.method == 'POST':
@@ -49,11 +49,11 @@ def formulario_accesorio(request):
 
         if formulario.is_valid():
             datos = formulario.cleaned_data
-            accesorio = Accesorio(datos['nombre'], datos['marca'], datos['descripcion'])
+            accesorio = Accesorio(datos['tipo'], datos['marca'], datos['descripcion'])
             accesorio.save()
             return render(request, 'inicio.html')
 
     
     formulario = AccesorioFormulario(request.POST)
-    return render(request, 'formulario_accesorio.html', { 'formulario': formulario })
+    return render(request, 'formulario_accesorio.html', {'formulario': formulario })
 

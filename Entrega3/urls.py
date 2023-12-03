@@ -23,6 +23,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('inicio/', pagina_base),
     #URLs de Apps
-    path('AppTiendaBicicletas', include('AppTiendaBicicletas.urls'))
+    path('AppTiendaBicicletas/', include('AppTiendaBicicletas.urls'))
 
 ]
