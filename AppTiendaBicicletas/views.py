@@ -62,3 +62,12 @@ def formulario_accesorio(request):
     formulario = AccesorioFormulario(request.POST)
     return render(request, 'formulario_accesorio.html', {'formulario': formulario })
 
+
+def buscar_cliente(request):
+    return render(request, 'formulario_buscar_cliente.html')
+
+def buscar_accesorio(request):
+    return render(request, 'formulario_buscar_accesorio.html')
+
+def buscar_modelo_bicicleta(request):
+    return render(request, 'formulario_buscar_modelo_bicicleta.html')
